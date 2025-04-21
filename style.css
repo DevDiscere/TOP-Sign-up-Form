@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 :root {
-    --text-color-white: white;
+    --primary-color: white;
     --title-font-size: 6rem;
 }
 
@@ -64,11 +64,11 @@ body {
     /* Display styles */
     display: flex;
 
-    /* Background styles */
-    background-color: #f9fafb;
-
     /* Font styles */
     font-family: 'Courier New', Courier, monospace;
+
+    /* Background styles */
+    background-color: #f9fafb;
 }
 
 aside {
@@ -76,7 +76,7 @@ aside {
     position: relative;
 
     /* Width and height styles */
-    width: 35%;
+    width: 70%;
     height: 100vh;
 }
 
@@ -93,7 +93,7 @@ div.logo-container {
     height: 150px;
 
     /* Padding styles */
-    padding: 1rem;
+    padding: 1em;
     
     /* Flex styles */
     justify-content: center;
@@ -114,7 +114,7 @@ div.logo-container > h1 {
     font-family: "Norse Bold", 'Courier New', Courier, monospace;
     font-size: var(--title-font-size);
     line-height: var(--title-font-size);
-    color: var(--text-color-white);
+    color: var(--primary-color);
 }
 
 .cover-photo {
@@ -137,19 +137,91 @@ footer {
     width: 100%;
 
     /* Padding styles */
-    padding: 0.5rem;
+    padding: 0.5em;
 
     /* Flex styles */
     justify-content: center;
+
+    /* Font styles */
+    color: var(--primary-color);
     
     /* Background styles */
     background-color: rgba(0, 0, 0, 0.5);
-
-    /* Font styles */
-    color: var(--text-color-white);
 }
 
 .footer-links {
     /* Font styles */
-    color: var(--text-color-white);
+    color: var(--primary-color);
+}
+
+main {
+    /* Display styles */
+    display: flex;
+
+    /* Flex styles */
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    /* Margin styles */
+    margin-bottom: 2.5em;
+    margin-left: 2em;
+}
+
+section {
+    /* Padding styles */
+    padding: 1em 3em 2em;
+
+    /* Margin styles */
+    margin-bottom: 2em;
+
+    /* Background styles */
+    background-color: var(--primary-color);
+
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    /* Width and height styles */
+    width: fit-content;
+
+    /* Padding styles */
+    padding: 0.5em 2.5em;
+
+    /* Margin styles */
+    margin-bottom: 2em;
+    margin-left: 3em;
+
+    /* Border styles */
+    border: none;
+    border-radius: 0.5em;
+
+    /* Font styles */
+    font-weight: bold;
+    color: var(--primary-color);
+
+    /* Background styles */
+    background-color: #266fa4;
+}
+
+button[type="submit"]:hover {
+    /* Background styles */
+    background-color: #145172;
+
+    cursor: pointer;
+}
+
+main > p {
+
+    width: fit-content;
+    /* Margin styles */
+    margin-left: 3em;
+}
+
+.login-link {
+    /* Font styles */
+    font-weight: bold;
+    text-decoration: none;
+    color: #266fa4;
 }
