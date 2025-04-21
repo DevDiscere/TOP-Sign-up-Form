@@ -171,7 +171,7 @@ h2 {
 
 section {
     /* Padding styles */
-    padding: 1em 3em 2em;
+    padding: 1em 3em 1.5em;
 
     /* Margin styles */
     margin-bottom: 2em;
@@ -180,6 +180,75 @@ section {
     background-color: var(--primary-color);
 
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    /* Margin styles */
+    margin-bottom: 0.8em;
+}
+
+ul {
+    /* Display styles */
+    display: flex;
+
+    /* Width and height styles */
+    width: 60%;
+
+    /* Padding styles */
+    padding: 0;
+
+    /* Margin styles */
+    margin: 0;
+
+    /* Flex styles */
+    flex-wrap: wrap;
+
+    /* List styles */
+    list-style-type: none;
+}
+
+li {
+    /* Margin styles */
+    margin-bottom: 1em;
+    margin-right: 4em;
+
+    /* Flex styles */
+    flex: 1;
+}
+
+label {
+    /* Display styles */
+    display: flex;
+
+    /* Flex styles */
+    flex-direction: column;
+}
+
+input {
+    /* Display styles */
+    display: block;
+
+    /* Border styles */
+    border: 1px solid #E5E7EB;
+    border-radius: 0.2em;
+
+    /* Flex styles */
+    flex: 1;
+}
+
+input:invalid {
+    /* Border styles */
+    border: 1px solid red;
+}
+
+input:focus {
+    /* Border styles */
+    border: 1px solid blue;
+
+    /* Outline styles */
+    outline: none;
+       
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 button[type="submit"] {

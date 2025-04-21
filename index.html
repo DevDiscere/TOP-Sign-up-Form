@@ -21,42 +21,66 @@
         <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.</h2>
         <section>
             <h3>Let's do this!</h3>
-            <form id="sign-up-form" action="">
+            <form action="" method="post" id="sign-up-form">
                 <ul>
                     <li>
                         <label for="first-name">
                             FIRST NAME
-                            <input type="text" id="first-name" name="user-first-name">
+                            <input 
+                                type="text"
+                                id="first-name" 
+                                name="user-first-name">
                         </label>
                     </li>
                     <li>
                         <label for="last-name">
                             LAST NAME
-                            <input type="text" id="last-name" name="user-last-name">
+                            <input 
+                                type="text" 
+                                id="last-name" 
+                                name="user-last-name">
                         </label>
                     </li>
                     <li>
                         <label for="email-address">
                             EMAIL
-                            <input type="email" id="email-address" name="user-email-address">
+                            <input 
+                                type="email" 
+                                id="email-address" 
+                                name="user-email-address">
                         </label>
                     </li>
                     <li>
                         <label for="phone-number">
                             PHONE NUMBER
-                            <input type="tel" id="phone-number" name="user-phone-number">
+                            <input 
+                                type="tel" 
+                                id="phone-number" 
+                                name="user-phone-number">
                         </label>
                     </li>
                     <li>
                         <label for="password">
                             PASSWORD
-                            <input type="password" id="password" name="user-password">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="user-password"
+                                minlength="8" 
+                                maxlength="16" 
+                                required>
                         </label>
                     </li>
                     <li>
                         <label for="confirm-password">
                             CONFIRM PASSWORD
-                            <input type="password" id="confirm-password" name="user-confirm-password">
+                            <input 
+                                type="password" 
+                                id="confirm-password" 
+                                name="user-confirm-password" 
+                                minlength="8" 
+                                maxlength="16" 
+                                required>
                         </label>
                     </li>
                 </ul>
